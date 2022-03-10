@@ -1,0 +1,386 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: 400, 500 e 700 */
+  font-size: 62.5%; /* Default font size for: 1rem = 10px */
+}
+
+/* ---- CLASSES ---- */
+.svg-color {
+  filter: invert(53%) sepia(13%) saturate(659%) hue-rotate(209deg)
+    brightness(93%) contrast(85%);
+}
+
+.do-flex {
+  display: flex;
+  align-items: center;
+}
+
+.ml-2 {
+  margin-left: 1.6rem;
+}
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.profile-img {
+  width: 12.8rem;
+  box-sizing: border-box;
+  clip-path: circle();
+}
+
+.container {
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- TAGS ---- */
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* ---- HTML ---- */
+
+body {
+  /* display: grid; */
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  margin: auto;
+}
+
+/*------ PROFILE ------*/
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.profile img {
+  margin: 3rem auto;
+}
+.profile h1 {
+  margin: 0 auto 1rem auto;
+}
+
+.profile h3 {
+  margin-bottom: 3rem;
+}
+
+/*------ LINKS ------*/
+
+.links {
+  box-sizing: border-box;
+}
+
+.links ul {
+  margin: 0 1rem;
+}
+
+.links li {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 1rem;
+  margin-inline-start: auto;
+}
+
+.links img {
+  color: var(--text-color);
+  margin-left: 2rem;
+}
+
+.links p {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+.links li:last-child {
+  margin-bottom: 2.4rem;
+}
+
+/*------ TECNOLOGIES ------*/
+.title {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.tecs {
+  display: grid;
+}
+
+.linha1,
+.linha2,
+.linha3 {
+  display: flex;
+  margin: 1.5rem;
+}
+
+.linha1 p,
+.linha2 p,
+.linha3 p {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  justify-content: center;
+  width: 8rem;
+}
+
+.tecs p {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  line-height: 1.3rem;
+  font-weight: bold;
+  width: 30%;
+  height: 3.5rem;
+
+  padding: 0.6rem;
+
+  box-sizing: border-box;
+  background-color: var(--bg-techs);
+  border-radius: 3rem;
+}
+
+/*------ EXPERIENCES ------*/
+/*------ EDUCATION ------*/
+
+#experiences h2,
+#education h2 {
+  margin-bottom: 1rem;
+}
+
+#experiences ul,
+#education ul {
+  margin-left: 4rem;
+  margin-right: auto;
+}
+
+#experiences ul li,
+#education ul li {
+  list-style: disc;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+#experiences ul li p,
+#education ul li p {
+  font-size: 1.3rem;
+}
+
+/*------ PROJECTS ------*/
+.projects,
+.recent-posts {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+#projects > div.project-duplo > div:nth-child(1) > p,
+#projects > div.project-duplo > div:nth-child(2) > p {
+  font-size: 1.5rem;
+}
+
+.projects a {
+  margin-left: auto;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.project-display {
+  padding: 3rem;
+  line-height: 1.7;
+}
+
+.project-display-bottom p {
+  margin-right: 0.9rem;
+}
+
+.project-display-bottom img {
+  width: 1.6rem;
+  margin-right: 0.9rem;
+}
+
+.javascript-circle {
+  height: 15px;
+  width: 15px;
+  background-color: #e7de79;
+  border-radius: 50%;
+  border: 2px solid #837e9f;
+  margin-right: 0.8rem;
+  margin-left: auto;
+}
+
+/*------ POSTS ------*/
+
+#posts > div.container.recent-posts.recent-posts-posts > div:nth-child(2) {
+  line-height: 2;
+  align-items: flex-start;
+}
+
+#posts
+  > div.container.recent-posts.recent-posts-posts
+  > div:nth-child(2)
+  > p:nth-child(2) {
+  font-size: 1.4rem;
+}
+#posts
+  > div.container.recent-posts.recent-posts-posts
+  > div:nth-child(2)
+  > p:nth-child(3) {
+  font-size: 1.6rem;
+}
+
+#posts
+  > div.container.recent-posts.recent-posts-posts
+  > div:nth-child(2)
+  > p:nth-child(4) {
+  font-size: 1.4rem;
+}
+
+#posts img {
+  display: none;
+}
+
+/*MEDIAS*/
+@media (min-width: 600px) {
+  .links li {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    /* margin-left: 35%; */
+    justify-content: left;
+  }
+  .tecs p {
+    display: flex;
+    font-size: 2rem;
+  }
+  #posts img {
+    display: block;
+  }
+  #posts > div.container.recent-posts.recent-posts-posts > div:nth-child(2) {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-columns: 25% auto;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    padding: 1rem;
+  }
+  .links li {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    justify-content: left;
+  }
+
+  .title {
+    display: flex;
+    font-size: 2rem;
+    justify-content: left;
+    padding-left: 2rem;
+  }
+
+  .linha1,
+  .linha2,
+  .linha3 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .linha1 p,
+  .linha2 p,
+  .linha3 p {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tecs p {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    line-height: 1.3rem;
+    font-weight: bold;
+    width: 30%;
+  }
+
+  #experiences ul,
+  #education ul {
+    align-content: center;
+  }
+
+  #projects {
+    height: fit-content;
+  }
+
+  .projects,
+  .recent-posts {
+    align-items: center;
+    padding: 3rem;
+    margin: 1rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .project-duplo {
+    display: grid;
+    /* height: 40%; */
+    grid-template-columns: 50% 50%;
+    line-height: 1.7;
+  }
+
+  .project-display {
+    padding: 3rem;
+    margin: 1rem !important;
+  }
+}
