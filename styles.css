@@ -231,8 +231,11 @@ body {
 }
 
 .project-display {
+  display: flex;
+  flex-direction: column;
   padding: 3rem;
   line-height: 1.7;
+  justify-content: space-between;
 }
 
 .project-display-bottom p {
