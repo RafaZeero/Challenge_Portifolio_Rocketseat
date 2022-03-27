@@ -3,6 +3,7 @@
   --text-color: #837e9f;
   --bg-cards: #302f3d;
   --bg-techs: #cb92b1;
+  --text-confira: #5f57bd;
 
   font-family: 'Montserrat', sans-serif;
   /* font-weight: 400, 500 e 700 */
@@ -286,6 +287,10 @@ body {
 
 #posts img {
   display: none;
+}
+
+.recent-posts-confira {
+  color: var(--text-confira);
 }
 
 /*MEDIAS*/
